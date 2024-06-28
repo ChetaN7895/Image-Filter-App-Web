@@ -1,0 +1,280 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900);
+body{
+font-family: Roboto,Arial,sans-serif;
+background-image:url('./../imgs/bg-image.png');
+background-repeat:repeat;
+background-attachment:fixed;
+}
+
+.navbar-default{ 
+border-radius:0px !important;
+width: 100% !important;
+background:#4527A0;
+border:none !important;
+padding-top:5px;
+z-index: 999 !important;
+
+}
+.navbar-default .navbar-brand {
+font-size:20px;
+font-weight:300;
+text-align:center !important;
+color:rgba(255,255,255,0.8);
+}
+.navbar-default .navbar-brand:hover {
+color:#fff !important;
+}
+a{ color:#fff}
+.navbar-default .navbar-brand:hover > a{
+color:#fff !important;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+color: rgba(255,255,255,1) !important;
+}
+.navbar-default .navbar-nav > li > a {
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+color: rgba(255,255,255,0.7);
+font-size: 16px;
+font-weight: 300;
+}
+a:hover{color: rgba(255,255,255,1) !important;}
+a:active{color: rgba(255,255,255,1) !important;}
+a:focus{color: rgba(255,255,255,1) !important;}
+
+#subnav {
+ width:100%;
+ padding-bottom:4px;
+ border:none !important;
+z-index:-9999;
+}
+
+.dropdown-menu{
+box-shadow:0 10px 50px -10px 5px rgba(57,70,78,.2) !important;
+position:absolute!important;
+border-radius:0;
+margin-right:2px;
+border:0;
+top:0px !important;
+font-size:17px!important
+}
+.dropdown-menu>li{
+margin-bottom:5px!important
+}
+.dropdown-menu>li>a{
+padding-top:10px;
+padding-bottom:10px;
+font-weight:400
+}
+.main-top{
+margin-top:100px;
+}
+
+
+#filter-options{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,1);
+}
+#filter-options .form-group {
+    margin-bottom: 10px;
+}
+
+
+
+
+.filter-setting-slider{ margin-top:30px; margin-bottom:50px;}
+input[type=range]{
+    -webkit-appearance: none;
+	background:#CCCCCC;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 20px;
+    border: none;
+	background:transparent;
+	border-radius:2px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: goldenrod;
+    margin-top: -10px;
+	border:2px solid goldenrod;
+	-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+	cursor:pointer;
+}
+input[type=range]:hover::-webkit-slider-thumb {
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+	border:2px solid #000;
+
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+
+}
+
+.per-filter{ font-size:25px; font-weight:300;-webkit-transition: all 3s ease-in-out;
+-moz-transition: all 3s ease-in-out;
+-o-transition: all 3s ease-in-out;
+-ms-transition: all 3s ease-in-out;
+transition: all 3s ease-in-out;}
+.img{
+    width: 450px !important;
+	height:450px !important;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1), 0px 2px 15px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1), 0px 2px 15px 0px rgba(0, 0, 0, 0.3);
+    border: 5px solid white;
+	border-radius:0px !important;
+}
+
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+	 font-weight: 400;
+    cursor: pointer;
+    min-width: 44px;
+    padding: 10.5px 20px;
+    font-size: 18px;
+	border-radius:1px;
+    line-height: 1.42857143;
+	background: #00a63f!important;
+    border-color: #00a63f!important;
+	color:#fff;
+ -webkit-box-shadow: rgba(0,0,0,0.2) 0 3px 6px 0;
+    box-shadow: rgba(0,0,0,0.2) 0 3px 6px 0;
+	-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+.fileUpload:hover{ color:#00a63f;background: #fff !important;
+    border-color: #00a63f!important; -webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+	
+}
+
+
+
+@media screen and (max-width: 768px) {
+body{
+font-family: Roboto,Arial,sans-serif;
+background-image:url('./../imgs/bg-image.png') !important;
+background-repeat:repeat;
+background-attachment:fixed;
+}
+#subnav {
+ width:100%;
+ padding-top:0px !important;
+  padding-bottom:0px !important;
+ border:none !important;
+ height:60px;
+z-index:-9999;
+}
+.navbar-nav li {
+
+    display: inline-block;
+ 
+}
+.scroll {
+  white-space: nowrap;
+	overflow-y:hidden;
+  -webkit-overflow-scrolling: touch;
+}
+.fileUpload { margin-top:20px;}
+.main-top{margin-top:80px;}
+.container{ text-align:center;}
+.img{
+    width: 350px !important;
+	height:350px !important;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+#filter-options{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+	margin-top:-93px;
+    background-color:rgba(255,255,255,1);
+	box-shadow:0 10px 50px -10px 5px rgba(57,70,78,.2) !important;
+}
+#filter-options .form-group {
+    margin-bottom: 10px;
+}
+
+    #filter-options{
+        color: #555;
+    }
+
+
+input[type=range]{
+    -webkit-appearance: none;
+	background:#CCCCCC;
+}
+
+
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    height: 30px;
+    width: 30px;   
+}
+
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+
+}
+.filter-setting-slider{ margin-top:70px; margin-bottom:50px;}
+
+.per-filter{ font-size:25px; font-weight:300; float:right !important; margin-top:58px; margin-right:-95px;}
+#main-header-mobile{ display:none; visibility:hidden;}
+ }
+ 

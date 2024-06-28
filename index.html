@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+
+<head>
+    <title>Share Filter Image : Powered By ChetanSolankipvt.limited</title>
+    <meta name="generator" content="Bootply" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href='http://www.sharecodepoint.com/favicon.ico' rel='icon' type='image/x-icon' />
+    <meta content='#4527A0' name='theme-color' />
+    <meta content='#4527A0' name='msapplication-navbutton-color' />
+    <meta content='#4527A0' name='apple-mobile-web-app-status-bar-style' />
+    <link href='https://plus.google.com/+Sharecodepointcom' rel='author' />
+    <link href='http://www.sharecodepoint.com' rel='shortlink' />
+    <link href='https://plus.google.com/+SachinYadavfastlearning/' rel='publisher' />
+    <script type="text/javascript">
+        function blurv(value) {
+            document.getElementById("bv").innerHTML = value + ' %';
+        }
+
+        function brightnessv(value) {
+            document.getElementById("brightv").innerHTML = value + ' %';
+        }
+
+        function contrast(value) {
+            document.getElementById("contrastvalue").innerHTML = value + ' %';
+        }
+
+        function transparency(value) {
+            document.getElementById("transparencyvalue").innerHTML = value + ' %';
+        }
+
+        function saturate(value) {
+            document.getElementById("saturatevalue").innerHTML = value + ' %';
+        }
+
+        function invert(value) {
+            document.getElementById("invertvalue").innerHTML = value + ' %';
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" id="subnav">
+        <div class="container">
+            <div class="" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav sub-nav-option scroll">
+                    <li class="dropdown">
+                        <a href="#" class=""></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Brightness</a>
+                        <ul id="filter-options" class="dropdown-menu">
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        Brightness
+                                        <br/>
+                                        <div align="center">
+                                            <span id="brightv" class="per-filter">100 %</span>
+                                        </div>
+                                        <input id="brightness" class="filter-setting-slider" onChange="brightnessv(this.value)" type="range" min=0 max=200 value="100">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blur</a>
+                        <ul id="filter-options" class="dropdown-menu">
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-12 ">
+                                        Blur
+                                        <br/>
+                                        <div align="center">
+                                            <span id="bv" class="per-filter">0 %</span>
+                                        </div>
+                                        <input id="blur" class="filter-setting-slider" onChange="blurv(this.value)" type="range" min="0" max="30" value="0">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contrast</a>
+                        <ul id="filter-options" class="dropdown-menu">
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-12 ">
+                                        Contrast
+                                        <div align="center">
+                                            <span id="contrastvalue" class="per-filter">100 %</span>
+                                        </div>
+                                        <input id="contrast" class="filter-setting-slider" onChange="contrast(this.value)" type="range" min="0" max="200" value="100">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">transparency</a>
+                        <ul id="filter-options" class="dropdown-menu">
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-12 ">
+                                        Opacity
+                                        <div align="center">
+                                            <span id="transparencyvalue" class="per-filter">100 %</span>
+                                        </div>
+                                        <input id="transparency" name="transparency" class="filter-setting-slider" onChange="transparency(this.value)" type="range" min="0" max="100" value="100">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Saturate</a>
+                        <ul id="filter-options" class="dropdown-menu">
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-12 ">
+                                        Saturate
+                                        <div align="center">
+                                            <span id="saturatevalue" class="per-filter">100 %</span>
+                                        </div>
+                                        <input id="saturate" name="saturate" class="filter-setting-slider" onChange="saturate(this.value)" type="range" min="0" max="500" value="100">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Invert</a>
+                        <ul id="filter-options" class="dropdown-menu">
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        Invert
+                                        <div align="center">
+                                            <span id="invertvalue" class="per-filter">0 %</span>
+                                        </div>
+                                        <input id="invert" name="invert" class="filter-setting-slider" onChange="invert(this.value)" type="range" min="0" max="100" value="0">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class=""></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class=""></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class=""></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class=""></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class=""></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class=""></a>
+                    </li>
+                    </form>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid main-top">
+        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" align="center">
+            <img id="img" class="img img-responsive img-thumbnail" src="imgs/default.svg " />
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="fileUpload btn">
+            <form id="form1" runat="server">
+                <span>Choose Image</span>
+                <input id="choose" type="file" class="upload" />
+            </form>
+        </div>
+    </div>
+    <br/>
+    <div align="center">
+        <span style="font-size:15px;">&copy; GITHUB.COM <br/>  <a href="https://github.com/ChetaN7895" style="color:#6600CC" target="_blank">www.github.com</a></span>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/filter.js"></script>
+</body>
+
+</html>
